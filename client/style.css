@@ -10,6 +10,9 @@
     --darkColor: #000;
     --greenColor: #01ff94;
 }
+a{
+    color: inherit;
+}
 .text-light{
     color: var(--lightColor);
 }
@@ -46,6 +49,9 @@ main{
     justify-content: space-evenly;
     height: 90%;
 }
+#title-home{
+    width: 90%;
+}
 #img-home{
     width:65%;
     height:40%;
@@ -60,6 +66,7 @@ main{
 }
 #nav-des{
     display: none;
+    color: var(--greenColor);
 }
 #nav-mob{
     position: fixed;
@@ -88,9 +95,29 @@ main{
     color: var(--lightColor);
 }
 .nav-des--item{
-    color: var(--greenColor);
     font-size: 1.5rem;
     font-weight: bold;
+}
+/*Nav popup*/
+.nav-popup{
+    position: fixed;
+    top: 82%;
+    right: 7%;
+    width: 60px;
+    height: 70px;
+    z-index: 1;
+}
+.nav-popup-content{
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-evenly;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: var(--greenColor);
+    border-radius: 10px;
+    z-index: 1;
 }
 /*Typing effect*/
 .Typewriter__wrapper{
@@ -113,6 +140,50 @@ main{
     z-index: 1;
     text-decoration: none;
 }
+/*language toogle desktop*/
+#nav-lang-btn{
+    position: relative;
+}
+#nav-lang-btn::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background: var(--lightColor);
+    border-radius: 20px;
+    z-index: 1;
+}
+#lang-opt{
+    display: none;
+    color: var(--greenColor);
+}
+#lang-toggle{
+    cursor: pointer;
+    position: relative;
+    appearance: none;
+    width: 60px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    transition: 0.5s;
+    z-index: 1;
+}
+#lang-toggle::before{
+    content: "";
+    width: 45%;
+    height: 85%;
+    position: absolute;
+    top: 7.5%;
+    left: 5%;
+    border-radius: 50%;
+    background: var(--lightColor);
+    transition: 0.5s;
+}
+#lang-toggle:checked::before{
+    left:50%;
+}
 /*social icons*/
 #social-div{
     width: 80%;
@@ -122,6 +193,7 @@ main{
 .icon-social{
     cursor: pointer;
 }
+.popup--item:active,
 .nav--item:active, #project-btn:active, .icon-social:active,
 #typing-btn:active, #weather-btn:active, #bored-btn:active,
 #landing-btn:active, #tech-btn:active {
@@ -233,6 +305,14 @@ main{
 }
 
 @media (min-width: 1000px){
+    #lang-opt{
+        display: flex;
+        position: absolute;
+        top: 2%;
+        right: 4%;
+        width: 130px;
+        justify-content: space-around;
+    }    
     #nav-mob{
         display: none;
     }
@@ -317,14 +397,16 @@ main{
         width: 30%;
     }
     #project-detail{
-        height: 70%;
+        height: 80%;
         width: 50%;
+        padding: 5px 0;
     }
     #project-detail img{
         width: 80%;
-        height: 50%;
+        height: 80%;
     }
     #project-detail p{
         width: 85%;
     }
 }
+/*lifesafe*/

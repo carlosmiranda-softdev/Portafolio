@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
     SiPython, SiJava, SiJavascript, SiReact,
     SiDjango, SiSqlite, SiMongodb, SiNodedotjs,
@@ -7,12 +7,18 @@ import {
 import ContainerSkills from "../components/ContainerSkill";
 import Kivy from "../images/kivy.png";
 import D3 from "../images/d3.png";
+import languageContext from "../context/languageContext";
+import handleLanguage from "../utils/languageHandle";
 
 export default function SkillPage() {
+
+    const { language } = useContext(languageContext);
+    const data = handleLanguage(language);
+
     return (
         <section id="skill-pg" className="flex-style">
             <div className="skill-container flex-style">
-                <h2 className="text-center">Lenguajes de programación</h2>
+                <h2 className="text-center">{data[0].content.skillTitle1}</h2>
                 <div className="flex-style skill-row">
                     <ContainerSkills
                         icon={<SiPython className="icon" />} name="Python"
@@ -24,7 +30,7 @@ export default function SkillPage() {
                         icon={<SiJavascript className="icon" />} name="JavaScript"
                     />
                 </div>
-                <h2 className="text-center">Librerías</h2>
+                <h2 className="text-center">{data[0].content.skillSubtitle1}</h2>
                 <div className="flex-style skill-row">
                     <ContainerSkills
                         icon={<SiReact className="icon" />} name="React Js"
@@ -35,7 +41,7 @@ export default function SkillPage() {
                 </div>
             </div>
             <div className="skill-container flex-style">
-                <h2 className="text-center">Frameworks de desarrollo</h2>
+                <h2 className="text-center">{data[0].content.skillTitle2}</h2>
                 <div className="flex-style skill-row">
                     <ContainerSkills
                         icon={<SiDjango className="icon" />} name="Django"
@@ -44,7 +50,7 @@ export default function SkillPage() {
                         icon={<img src={Kivy} className="icon img-resp" />} name="Kivy"
                     />
                 </div>
-                <h2 className="text-center">Bases de datos</h2>
+                <h2 className="text-center">{data[0].content.skillSubtitle2}</h2>
                 <div className="flex-style skill-row">
                     <ContainerSkills
                         icon={<SiSqlite className="icon" />} name="SQLite"
@@ -55,7 +61,7 @@ export default function SkillPage() {
                 </div>
             </div>
             <div id="others-div" className="flex-style">
-                <h2 className="text-light text-center">Otros</h2>
+                <h2 className="text-light text-center">{data[0].content.skillTitle3}</h2>
                 <div className="flex-style">
                     <ContainerSkills
                         icon={<SiNodedotjs className="icon" />} name="Node Js"
