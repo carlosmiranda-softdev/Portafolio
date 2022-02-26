@@ -15,7 +15,7 @@ export default function ProjectPage() {
         const info = projectInfo.filter(item => item.name === projectName)
         return info;
     }
-    
+
     useEffect(() => {
         setData(searchInfo(project));
     }, [project]);
@@ -33,14 +33,10 @@ export default function ProjectPage() {
                     title={data[0].info.title}
                     source={data[0].info.source}
                     alt={data[0].info.alt}
-                    description={data[0].info.description}
+                    githubLink={data[0].info.github}
+                    demoLink={data[0].info.demo}
                 />
             }
-        </section>
+        </section >
     )
 }
-
-/* import Boredbot from "../images/boredbot.jpg";
-import LandingPage from "../images/landing.jpg";
-import TechPage from "../images/technical.png";
-import Weather from "../images/weather.jpg"; */

@@ -18,7 +18,9 @@ export const projectInfo = [
                 escribir en un tiempo dado.
             `,
             background: "linear-gradient(130deg, rgba(255, 255, 255, 0.3), rgba(1, 255, 148, 0.6))",
-            border: "none"
+            border: "none",
+            github: "https://github.com/CarlosMrnd/TypingApp",
+            demo: "https://carlosmrnd.github.io/TypingApp/"
         }
     },
     {
@@ -34,7 +36,9 @@ export const projectInfo = [
                 de tu preferencia.
             `,
             background: "linear-gradient(130deg, rgba(255, 255, 255, 0.3), rgba(133, 48, 212, 0.6))",
-            border: "none"
+            border: "none",
+            github: "https://github.com/CarlosMrnd/WeatherApp",
+            demo: "https://carlosmrnd.github.io/WeatherApp/"
         }
     },
     {
@@ -50,7 +54,9 @@ export const projectInfo = [
                 hacer si estas aburrido.
             `,
             background: "linear-gradient(130deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 0, 0.6))",
-            border: "none"
+            border: "none",
+            github: "https://github.com/CarlosMrnd/Boredbot",
+            demo: "https://carlosmrnd.github.io/Boredbot/"
         }
     },
     {
@@ -66,7 +72,9 @@ export const projectInfo = [
                 ofrecida por freeCodeCamp.
             `,
             background: "linear-gradient(130deg, rgba(255, 255, 255, 0.3), rgba(0, 255, 255, 0.6))",
-            border: "none"
+            border: "none",
+            github: "",
+            demo: ""
         }
     },
     {
@@ -82,7 +90,9 @@ export const projectInfo = [
                 freeCodeCamp.
             `,
             background: "linear-gradient(130deg, rgba(255, 255, 255, 0.3), rgba(79, 121, 162, 0.6))",
-            border: "none"
+            border: "none",
+            github: "",
+            demo: ""
         }
     }
 ]

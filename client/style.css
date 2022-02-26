@@ -82,6 +82,14 @@ main{
     height: 35px;
     color: var(--greenColor);
 }
+.icon-pro{
+    width: 35px;
+    height: 35px;
+    color: var(--lightColor);
+}
+.icon-pro:hover{
+    color:var(--darkColor);
+}
 .icon:hover, #project-btn:hover, .nav-des--item:hover{
     color: var(--lightColor);
 }
@@ -407,6 +415,11 @@ main{
     }
     #project-detail p{
         width: 85%;
+    }
+    #project-card{
+        width: 50%;
+        z-index: 2;
+        border-radius: 30px;
     }
 }
 /*lifesafe*/
