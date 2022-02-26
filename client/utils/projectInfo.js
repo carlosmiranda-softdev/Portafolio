@@ -73,8 +73,8 @@ export const projectInfo = [
             `,
             background: "linear-gradient(130deg, rgba(255, 255, 255, 0.3), rgba(0, 255, 255, 0.6))",
             border: "none",
-            github: "",
-            demo: ""
+            github: "https://codepen.io/Carlos_Miranda/pen/mdRZwoL",
+            demo: "https://codepen.io/Carlos_Miranda/full/mdRZwoL"
         }
     },
     {
@@ -91,8 +91,8 @@ export const projectInfo = [
             `,
             background: "linear-gradient(130deg, rgba(255, 255, 255, 0.3), rgba(79, 121, 162, 0.6))",
             border: "none",
-            github: "",
-            demo: ""
+            github: "https://codepen.io/Carlos_Miranda/pen/VwpLYYw",
+            demo: "https://codepen.io/Carlos_Miranda/full/VwpLYYw"
         }
     }
 ]
