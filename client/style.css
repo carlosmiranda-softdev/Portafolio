@@ -72,7 +72,7 @@ main{
     position: fixed;
     width: 96vw;
     height: 46px;
-    top: 92%;
+    top: 93%;
     left: 2%;
     z-index: 1;
     justify-content: space-around;
@@ -80,26 +80,29 @@ main{
 .icon{
     width: 35px;
     height: 35px;
-    color: var(--greenColor);
+    fill: var(--greenColor);
 }
 .icon-pro{
     width: 35px;
     height: 35px;
-    color: var(--lightColor);
+    fill: var(--lightColor);
 }
 .icon-pro:hover{
-    color:var(--darkColor);
+    fill:var(--darkColor);
 }
 .icon:hover, #project-btn:hover, .nav-des--item:hover{
     color: var(--lightColor);
+    fill: var(--lightColor);
 }
 .nav--item{
     width: 30px;
     height: 30px;
+    fill: var(--greenColor);
     color: var(--greenColor);
     cursor: pointer;
 }
 .nav--active{
+    fill: var(--lightColor);
     color: var(--lightColor);
 }
 .nav-des--item{

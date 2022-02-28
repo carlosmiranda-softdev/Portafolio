@@ -64,7 +64,7 @@ module.exports = {
             "enable": true,
             "outMode": "out",
             "random": false,
-            "speed": 6,
+            "speed": 4,
             "straight": false,
         }
     },

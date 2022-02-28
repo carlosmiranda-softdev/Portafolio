@@ -1,9 +1,10 @@
 const path = require("path");
 const BUILD_DIR = path.resolve(__dirname, "./public/build");
 const APP_DIR = path.resolve(__dirname, "./client");
+//const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 
 module.exports = {
-    mode: "development",
+    mode: "production",
     entry: {
         main: APP_DIR + "/index.js"
     },
@@ -11,6 +12,9 @@ module.exports = {
         filename: "bundle.js",
         path: BUILD_DIR
     },
+    /* plugins: [
+        new BundleAnalyzerPlugin()
+    ], */
     module: {
         rules: [
             {
