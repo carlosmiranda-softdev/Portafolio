@@ -19,8 +19,8 @@ export const projectInfo = [
             `,
             background: "linear-gradient(130deg, rgba(255, 255, 255, 0.3), rgba(1, 255, 148, 0.6))",
             border: "none",
-            github: "https://github.com/CarlosMrnd/TypingApp",
-            demo: "https://carlosmrnd.github.io/TypingApp/"
+            github: "https://github.com/carlosmiranda-softdev/TypingApp",
+            demo: "https://carlosmiranda-softdev.github.io/TypingApp/"
         }
     },
     {
@@ -37,8 +37,8 @@ export const projectInfo = [
             `,
             background: "linear-gradient(130deg, rgba(255, 255, 255, 0.3), rgba(133, 48, 212, 0.6))",
             border: "none",
-            github: "https://github.com/CarlosMrnd/WeatherApp",
-            demo: "https://carlosmrnd.github.io/WeatherApp/"
+            github: "https://github.com/carlosmiranda-softdev/WeatherApp",
+            demo: "https://carlosmiranda-softdev.github.io/WeatherApp/"
         }
     },
     {
@@ -55,8 +55,8 @@ export const projectInfo = [
             `,
             background: "linear-gradient(130deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 0, 0.6))",
             border: "none",
-            github: "https://github.com/CarlosMrnd/Boredbot",
-            demo: "https://carlosmrnd.github.io/Boredbot/"
+            github: "https://github.com/carlosmiranda-softdev/Boredbot",
+            demo: "https://carlosmiranda-softdev.github.io/Boredbot/"
         }
     },
     {
